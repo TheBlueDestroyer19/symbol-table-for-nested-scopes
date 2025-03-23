@@ -13,7 +13,7 @@ Initialize Scope  - increments the current level and  creates a new symbol
 table for that level. It links the new table to the previous level’s table and 
 updates the current level pointer used by lookup and insert functions. 
 
-# "assign <variable_name> <value>"
+# "assign <variable_name><value>"
 Insert  the value of variable_name in the current scope  with value
 
 # "print <variable_name>"
