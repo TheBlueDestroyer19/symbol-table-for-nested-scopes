@@ -8,18 +8,18 @@ table by maintaining a new symbol table for every scope and linking it with the 
 In order to implement the following functionalities I have also implemented file handling to read sample code and then execute it line by line.
 
 Below are the functionalities that need to be implemented. 
-# "begin"
+# begin
 Initialize Scope  - increments the current level and  creates a new symbol 
 table for that level. It links the new table to the previous level’s table and 
 updates the current level pointer used by lookup and insert functions. 
 
-# "assign <v_name><value>"
+# assign <v_name> <value>
 Insert  the value of variable_name in the current scope  with value
 
-# "print <variable_name>"
+# print <variable_name>
 Lookup  the value of variable_name in the current scope. If it  does not exist in the current 
 scope look it up in the surrounding scope 
 
-# "end"  
+# end
 Finalyze Scope  changes the current level pointer so  that it points to the table 
 for the scope surrounding the current level
